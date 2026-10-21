@@ -32,8 +32,8 @@ def http_trigger_teste1(req: func.HttpRequest) -> func.HttpResponse:
              status_code=200
         )
 
-@app.route(route="http_trigger_teste1", auth_level=func.AuthLevel.ANONYMOUS)
-def http_trigger_teste1(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="http_trigger_Hello", auth_level=func.AuthLevel.ANONYMOUS)
+def http_trigger_Hello(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
